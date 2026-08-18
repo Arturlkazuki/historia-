@@ -1,6 +1,10 @@
-Aqui está o seu código adaptado para o contexto de um jogo de vôlei decisivo! A estrutura do JavaScript foi mantida, alterando os enunciados, alternativas e afirmações para contar a jornada do jogador durante a partida:
+const caixaPincipal = document.querySelector(".caixa-principal")
+const caixaPergunta = document.querySelector(".caixa-pergunta")
+const caixaAlternetivas = document.querySelector(".caixa-resultado")
+const caixaResultado = document.querySelector(".caixa-resultado")
+const textoResultado = document.querySelector(".texto-principal")
 
-JavaScript
+
 
 
 const perguntas = [
