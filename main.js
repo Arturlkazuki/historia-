@@ -1,9 +1,8 @@
-const caixaPincipal = document.querySelector(".caixa-principal")
-const caixaPergunta = document.querySelector(".caixa-pergunta")
-const caixaAlternetivas = document.querySelector(".caixa-resultado")
-const caixaResultado = document.querySelector(".caixa-resultado")
-const textoResultado = document.querySelector(".texto-principal")
-
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
 
 
@@ -75,43 +74,41 @@ const perguntas = [
     },
 ];
 
-let atual = 0
+let atual = 0; 
 let perguntaAtual;
-let historiaFinal = ""
+let historiaFinal = "";
 
-function mostrarPergunta() {
-    if (atual >= perguntas.length){
-        mostrarResultado()
-    return
+function mostraPergunta() {
+    if(atual >= perguntas.length){
+        mostraResultado();
+        return;
     }
-    perguntaAtual = perguntas[atual]
-    caixaPergunta.textContent =perguntaAtual.enunciado
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent = "";
-    mostrarAlternativa()
+    mostraAlternativas();
 }
-function mostrarAlternativa(){
-    for (const alternativas of perguntaAtual.alternativas){
-        const botaoAlternativa = document.createElement("button")
-        botaoAlternativas.textContent = alternativas.texto
-        botaoAlternativas. addEventListener ("click", ()=> respostaSelecionada(alternativas))
-        caixaAlternativas.appendChild(botaoAlternativas)
+
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas){
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAlternativas);
+    }
 }
-}
+
 function respostaSelecionada(opcaoSelecionada){
-    const afirmacoes = opcaoSelecionada.afirmacao
-        historiaFinal += afirmacoes + " "
-        atual++
-        MostraPergunta()
-}
-function mostrarResultado(){
-    caixaPergunta.textContent="em 2049 ..."
-    textoResultado.textContent = historiaFinal 
-    caixaAlternativa.textContent ="";
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + " ";
+    atual++;
+    mostraPergunta();
 }
 
+function mostraResultado(){
+    caixaPerguntas.textContent = "Em 2049...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = ""; 
+}
 
-
-
-
-
-mostrarPergunta()
+mostraPergunta();
