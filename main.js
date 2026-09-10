@@ -12,11 +12,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Estou muito nervoso com a torcida!",
-                afirmacao: "No início sentiu a pressão da torcida e o peso do jogo decisivo."
+                afirmacao: [ "No início sentiu a pressão da torcida e o peso do jogo decisivo.",
+                    "Está ansioso pela grande final, tendo um frio na barriga, mas confiante."
+                ]
             },
             {
                 texto: "Essa é a minha chance de dar o meu melhor!",
-                afirmacao: "Entrou em quadra motivado e focado em dar o seu melhor a cada ponto."
+                afirmacao: ["Entrou em quadra motivado e focado em dar o seu melhor a cada ponto.",
+                    "Enta em quadra com confiança mas apreensivo de ser titular."
+                ]
             }
         ]
     },
@@ -25,11 +29,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Manda uma cortada com força máxima tentando explorar o bloqueio ou furar a defesa.",
-                afirmacao: "Decidiu arriscar nos ataques potentes para impor ritmo no ataque."
+                afirmacao: [ "Decidiu arriscar nos ataques potentes para impor ritmo no ataque.",
+                    ""
+                ]
             },
             {
                 texto: "Aposta em uma largadinha estratégica no vazio da quadra adversária.",
-                afirmacao: "Mostrou inteligência tática ao usar a visão de jogo para surpreender a defesa."
+                afirmacao: [ "Mostrou inteligência tática ao usar a visão de jogo para surpreender a defesa.", 
+                    ""
+                ]
             }
         ]
     },
@@ -38,11 +46,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Conversa com o time, pede calma e foca no próximo ponto sem responder às provocações.",
-                afirmacao: "Manteve a cabeça fria e ajudou a unir o time no momento mais crítico da partida."
+                afirmacao: [ "Manteve a cabeça fria e ajudou a unir o time no momento mais crítico da partida.",
+                    ""
+                ]
             },
             {
                 texto: "Comemora o próximo ponto vibrando forte para mostrar a força da sua equipe.",
-                afirmacao: "Usou a energia da provocação como combustível para vibrar e incendiar o time."
+                afirmacao: [ "Usou a energia da provocação como combustível para vibrar e incendiar o time.",
+                    ""
+                ]
             }
         ]
     },
@@ -51,11 +63,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Se joga de peito no chão (peixinho) para não deixar a bola cair.",
-                afirmacao: "Demonstrou raça e entrega total ao se jogar em todas as bolas na defesa."
+                afirmacao: [ "Demonstrou raça e entrega total ao se jogar em todas as bolas na defesa.",
+                    ""
+                ]
             },
             {
                 texto: "Se posiciona bem para fazer uma manchete firme e direcionada ao levantador.",
-                afirmacao: "Destacou-se pela precisão técnica e boa leitura de jogo na defesa."
+                afirmacao: [ "Destacou-se pela precisão técnica e boa leitura de jogo na defesa.",
+                    ""
+                ]
             }
         ]
     },
@@ -64,11 +80,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Manda um saque flutuante tático, buscando o ponto fraco da recepção deles.",
-                afirmacao: "Manteve a precisão nos momentos decisivos e garantiu a vitória com jogadas inteligentes."
+                afirmacao: ["Manteve a precisão nos momentos decisivos e garantiu a vitória com jogadas inteligentes.",
+                ""
+            ]
             },
             {
                 texto: "Solta o braço em um saque viagem potente para tentar fechar o jogo com um ace.",
-                afirmacao: "Apostou na coragem e na ousadia até o último segundo para conquistar o campeonato."
+                afirmacao: ["Apostou na coragem e na ousadia até o último segundo para conquistar o campeonato.",
+                    ""
+                ]
             }
         ]
     },
