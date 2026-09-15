@@ -8,18 +8,24 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
+[
+    {
         enunciado: "É o dia da grande final do campeonato escolar de vôlei. O ginásio está lotado e o técnico chama você para entrar no primeiro set como titular. Qual o seu primeiro pensamento?",
         alternativas: [
             {
                 texto: "Estou muito nervoso com a torcida!",
-                afirmacao: [ "No início sentiu a pressão da torcida e o peso do jogo decisivo.",
-                    "Está ansioso pela grande final, tendo um frio na barriga, mas confiante."
+                afirmacao: [
+                    "No início sentiu a pressão da torcida e o peso do jogo decisivo.",
+                    "Está ansioso pela grande final, tendo um frio na barriga, mas confiante.",
+                    "Usou o nervosismo inicial como combustível para se manter atento a cada detalhe."
                 ]
             },
             {
                 texto: "Essa é a minha chance de dar o meu melhor!",
-                afirmacao: ["Entrou em quadra motivado e focado em dar o seu melhor a cada ponto.",
-                    "Enta em quadra com confiança mas apreensivo de ser titular."
+                afirmacao: [
+                    "Entrou em quadra motivado e focado em dar o seu melhor a cada ponto.",
+                    "Entrou em quadra com confiança, superando a apreensão de ser titular.",
+                    "Demonstrou liderança e determinação desde o apito inicial."
                 ]
             }
         ]
@@ -29,14 +35,18 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Manda uma cortada com força máxima tentando explorar o bloqueio ou furar a defesa.",
-                afirmacao: [ "Decidiu arriscar nos ataques potentes para impor ritmo no ataque.",
-                    ""
+                afirmacao: [
+                    "Decidiu arriscar nos ataques potentes para impor ritmo no ataque.",
+                    "Desafiou o bloqueio alto com coragem e potência nos golpes.",
+                    "Apostou na força física para tentar quebrar a defesa adversária."
                 ]
             },
             {
                 texto: "Aposta em uma largadinha estratégica no vazio da quadra adversária.",
-                afirmacao: [ "Mostrou inteligência tática ao usar a visão de jogo para surpreender a defesa.", 
-                    ""
+                afirmacao: [
+                    "Mostrou inteligência tática ao usar a visão de jogo para surpreender a defesa.",
+                    "Decidiu surpreender o bloqueio ao explorar os espaços vazios da quadra.",
+                    "Pensou rápido e colocou a bola com precisão onde ninguém esperava."
                 ]
             }
         ]
@@ -46,14 +56,18 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Conversa com o time, pede calma e foca no próximo ponto sem responder às provocações.",
-                afirmacao: [ "Manteve a cabeça fria e ajudou a unir o time no momento mais crítico da partida.",
-                    ""
+                afirmacao: [
+                    "Manteve a cabeça fria e ajudou a unir o time no momento mais crítico da partida.",
+                    "Usou a provocação para concentrar o time e melhorar a comunicação em quadra.",
+                    "Demonstrou maturidade emocional ao ignorar a pressão psicológica do adversário."
                 ]
             },
             {
                 texto: "Comemora o próximo ponto vibrando forte para mostrar a força da sua equipe.",
-                afirmacao: [ "Usou a energia da provocação como combustível para vibrar e incendiar o time.",
-                    ""
+                afirmacao: [
+                    "Usou a energia da provocação como combustível para vibrar e incendiar o time.",
+                    "Superou o abalo inicial e respondeu com garra e presença em quadra.",
+                    "Incendiou a torcida e contagiou os companheiros com sua vibração."
                 ]
             }
         ]
@@ -63,14 +77,18 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Se joga de peito no chão (peixinho) para não deixar a bola cair.",
-                afirmacao: [ "Demonstrou raça e entrega total ao se jogar em todas as bolas na defesa.",
-                    ""
+                afirmacao: [
+                    "Demonstrou raça e entrega total ao se jogar em todas as bolas na defesa.",
+                    "Salva a bola em um movimento espetacular, mantendo o ponto vivo.",
+                    "Garantiu uma defesa de pura garra que levantou o banco de reservas."
                 ]
             },
             {
                 texto: "Se posiciona bem para fazer uma manchete firme e direcionada ao levantador.",
-                afirmacao: [ "Destacou-se pela precisão técnica e boa leitura de jogo na defesa.",
-                    ""
+                afirmacao: [
+                    "Destacou-se pela precisão técnica e boa leitura de jogo na defesa.",
+                    "Ofereceu um passe perfeito para o levantador estruturar o contra-ataque.",
+                    "Manteve a calma sob pressão e executou o fundamento com perfeição."
                 ]
             }
         ]
@@ -80,18 +98,22 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Manda um saque flutuante tático, buscando o ponto fraco da recepção deles.",
-                afirmacao: ["Manteve a precisão nos momentos decisivos e garantiu a vitória com jogadas inteligentes.",
-                ""
-            ]
+                afirmacao: [
+                    "Manteve a precisão nos momentos decisivos e garantiu a vitória com jogadas inteligentes.",
+                    "Colocou a bola com frieza na zona de conflito da recepção adversária.",
+                    "Optou pelo controle e pela tática para colocar toda a pressão no passe adversário."
+                ]
             },
             {
                 texto: "Solta o braço em um saque viagem potente para tentar fechar o jogo com um ace.",
-                afirmacao: ["Apostou na coragem e na ousadia até o último segundo para conquistar o campeonato.",
-                    ""
+                afirmacao: [
+                    "Apostou na coragem e na ousadia até o último segundo para conquistar o campeonato.",
+                    "Assumiu a responsabilidade com um saque agressivo que definiu o título.",
+                    "Decidiu o campeonato na força e na confiança, sem deixar chances de reação."
                 ]
             }
         ]
-    },
+    }
 ];
 
 let atual = 0; 
@@ -119,7 +141,7 @@ function mostraAlternativas(){
 }
 
 function respostaSelecionada(opcaoSelecionada){
-    const afirmacoes = opcaoSelecionada.afirmacao;
+    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao;)
     historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
@@ -129,6 +151,10 @@ function mostraResultado(){
     caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
+}
+function aleatorio(lista){
+    const posicao = Math.random()*lista.length
+    console.log(posicao)
 }
 
 mostraPergunta();
