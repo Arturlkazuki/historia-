@@ -29,7 +29,7 @@ const perguntas = [
                 ]
             }
         ]
-    },
+    }
     {
         enunciado: "O jogo começa equilibrado. O levantador do seu time faz um levantamento perfeito para você no ataque, mas o bloqueio adversário é alto e bem posicionado. O que você faz?",
         alternativas: [
@@ -110,10 +110,10 @@ const perguntas = [
                     "Apostou na coragem e na ousadia até o último segundo para conquistar o campeonato.",
                     "Assumiu a responsabilidade com um saque agressivo que definiu o título.",
                     "Decidiu o campeonato na força e na confiança, sem deixar chances de reação."
-                ]
+                ] 
             }
         ]
-    }
+    },
 ];
 
 let atual = 0; 
