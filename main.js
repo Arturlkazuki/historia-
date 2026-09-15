@@ -6,8 +6,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 
 
-const perguntas = [
-    {
+const perguntas = 
 [
     {
         enunciado: "É o dia da grande final do campeonato escolar de vôlei. O ginásio está lotado e o técnico chama você para entrar no primeiro set como titular. Qual o seu primeiro pensamento?",
@@ -29,7 +28,7 @@ const perguntas = [
                 ]
             }
         ]
-    }
+    },
     {
         enunciado: "O jogo começa equilibrado. O levantador do seu time faz um levantamento perfeito para você no ataque, mas o bloqueio adversário é alto e bem posicionado. O que você faz?",
         alternativas: [
