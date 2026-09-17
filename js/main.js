@@ -7,7 +7,6 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 
 
-
 let atual = 0; 
 let perguntaAtual;
 let historiaFinal = "";
@@ -44,10 +43,7 @@ function mostraResultado(){
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
 }
-function aleatorio(lista){
-    const posicao = Math.floor (Math.random()*lista.length)
-    console.log(posicao)
-    return(posicao)
-}
+
+
 
 mostraPergunta();
