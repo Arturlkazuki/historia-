@@ -12,11 +12,11 @@ let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
-    if(atual >= perguntas.length){
+    if(atual >= pergunta.length){
         mostraResultado();
         return;
     }
-    perguntaAtual = perguntas[atual];
+    perguntaAtual = pergunta[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent = "";
     mostraAlternativas();
