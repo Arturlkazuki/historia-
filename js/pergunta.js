@@ -1,4 +1,4 @@
-export const perguntas = [
+export const pergunta = [
     {
         enunciado: "É o dia da grande final do campeonato escolar de vôlei. O ginásio está lotado e o técnico chama você para entrar no primeiro set como titular. Qual o seu primeiro pensamento?",
         alternativas: [
