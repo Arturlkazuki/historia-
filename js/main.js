@@ -22,6 +22,8 @@ function iniciarJogo(){
     caixaPerguntas.classList.remove("mostrar")
     caixaAlternativas.classList.remove("motrar")
     caixaResultado.classList.remove("mostrar")
+    mostraPergunta()
+
 }
 
 
@@ -60,4 +62,3 @@ function mostraResultado(){
 
 
 
-mostraPergunta();
